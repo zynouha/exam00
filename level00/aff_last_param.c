@@ -6,15 +6,15 @@ int main(int argc, char **argv){
         write(1,"\n",1);
     }
     else{
-        while(argv[i]){
+        
             j = 0;
             while(argv[i][j]){
                 write(1,&argv[i][j],1);
                 j++;
             }
             write(1,"\n",1);
-            i++; //is necessary to stop the outerloop
+        
         }
-    }
+    
     return(0);
 }
