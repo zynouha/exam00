@@ -7,7 +7,7 @@ int main(int argc, char **argv){
     int found;
 
     if(argc != 3){
-        write(1,"\n",1);
+        write(1,"\n",1);k
         return(0);
     }
     i = 0;
@@ -40,3 +40,6 @@ int main(int argc, char **argv){
     write(1,"\n",1);
     return(0);
 }
+
+/* $>./inter "padinton" "paqefwtdjetyiytjneytjoeyjnejeyj" | cat -e
+padinto$ */

@@ -1,0 +1,31 @@
+Allowed function: write
+________________________________________________________________________________________________
+
+Exercise: replace every nth character with '3'
+
+Write a function with the following signature:
+
+void abcA(char *s, int n);
+
+The function takes a string s and an integer n, and prints the entire string, character by character — except that every character whose
+1-based position in the string is a multiple of n (the nth character, the 2nth, the 3nth, and so on)
+gets replaced with the character '3' instead of being printed as-is.
+
+If n is 0, the function should do nothing and return immediately (to avoid a modulo by zero).
+
+________________________________________________________________________________________________
+
+Quick trace example
+
+abcA("abcdefgh", 3):
+
+i=0 (position 1): not multiple of 3 → print 'a'
+i=1 (position 2): not multiple of 3 → print 'b'
+i=2 (position 3): multiple of 3 → print '3'
+i=3 (position 4): not multiple of 3 → print 'd'
+i=4 (position 5): not multiple of 3 → print 'e'
+i=5 (position 6): multiple of 3 → print '3'
+i=6 (position 7): not multiple of 3 → print 'g'
+i=7 (position 8): not multiple of 3 → print 'h'
+
+Output: ab3de3gh

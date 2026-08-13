@@ -10,9 +10,9 @@ int occ_z(char *str){
     }
     return(occ);
 }
-#include <stdio.h>
+/* #include <stdio.h>
 int main(void){
     char *str="fiZZbuZZ";
     printf("%d\n",occ_z(str));
     return(0);
-}
+} */

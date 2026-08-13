@@ -1,0 +1,21 @@
+Allowed function: write
+________________________________________________________________________________________________
+
+Exercise: digital root of a number
+
+Write a program that takes exactly one argument (a string of digits, argv[1]).
+
+If the program is called with anything other than exactly one argument, print a single newline and stop.
+Otherwise, treat each character of the argument as a digit and sum them all together.
+If that sum has more than one digit, repeat the process: sum its digits again, and keep repeating until only a single digit remains.
+Print that final single digit, followed by a newline.
+________________________________________________________________________________________________
+Quick trace example
+
+./a.out 1234567:
+
+First pass: 1+2+3+4+5+6+7 = 28
+28 > 9, so reduce again: 2 + 8 = 10
+10 > 9, so reduce again: 1 + 0 = 1
+1 is a single digit → stop.
+Output: 1

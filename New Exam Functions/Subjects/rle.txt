@@ -1,0 +1,28 @@
+Allowed function: write
+________________________________________________________________________________________________
+
+Exercise: run-length encode a string
+
+Write a program that takes exactly one argument (a string, argv[1]).
+
+If the program is called with anything other than exactly one argument, print just a newline and stop.
+Otherwise, scan through the string and compress consecutive runs of the same repeated character:
+Count how many times each character repeats consecutively.
+If a character repeats 9 times or fewer, print the count followed by the character itself (e.g., "aaa" → "3a").
+If a character repeats more than 9 times, print just the character once, with no count at all (i.e., the count is silently dropped for long runs).
+After processing the whole string, print a newline.
+
+________________________________________________________________________________________________
+
+Quick trace example
+
+./a.out "aaabccccccccccdd"
+
+Breaking the input into runs: aaa (3), b (1), cccccccccc (10), dd (2)
+
+"aaa" → count 3 (≤9) → print "3a"
+"b" → count 1 (≤9) → print "1b"
+"cccccccccc" → count 10 (>9) → print just "c" (no count)
+"dd" → count 2 (≤9) → print "2d"
+
+Output: 3a1bc2d
